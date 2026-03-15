@@ -1,4 +1,0 @@
-repository "SkyHighPrototype/SkyHighPrototype@18968380152646@cloud"
-  path "/"
-    br "/main"
-    co "/main"
