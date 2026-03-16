@@ -15,9 +15,6 @@ public class FlightController : MonoBehaviour
 
     void Start()
     {
-        // TODO (Task 3-B) : Cache GetComponent<Rigidbody>() into 'rb'.
-        //                   Then set rb.freezeRotation = true.
-        //                   Why is freezeRotation needed? Answer in your PDF.
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
     }
@@ -33,6 +30,16 @@ public class FlightController : MonoBehaviour
     {
         // TODO (Task 3-C) :
         // Pitch
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            transform.Rotate(Vector3.right * pitchSpeed * Time.deltaTime);
+        }
+
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            transform.Rotate(-Vector3.right * pitchSpeed * Time.deltaTime);
+        }
+        
         // Roll
     }
 
