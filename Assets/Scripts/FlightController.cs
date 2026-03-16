@@ -18,6 +18,8 @@ public class FlightController : MonoBehaviour
         // TODO (Task 3-B) : Cache GetComponent<Rigidbody>() into 'rb'.
         //                   Then set rb.freezeRotation = true.
         //                   Why is freezeRotation needed? Answer in your PDF.
+        rb = GetComponent<Rigidbody>();
+        rb.freezeRotation = true;
     }
 
     // Update is called once per frame
