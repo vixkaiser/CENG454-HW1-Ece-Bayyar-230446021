@@ -52,6 +52,15 @@ public class FlightController : MonoBehaviour
         }
 
         // Roll
+        if (Input.GetKey(KeyCode.Q))
+        {
+            transform.Rotate(Vector3.forward * rollSpeed * Time.deltaTime);
+        }
+
+        if (Input.GetKey(KeyCode.E))
+        {
+            transform.Rotate(-Vector3.forward * rollSpeed * Time.deltaTime);
+        }
     }
 
     private void HandleThrust()
