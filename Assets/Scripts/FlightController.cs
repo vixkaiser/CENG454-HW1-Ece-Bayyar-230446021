@@ -40,6 +40,17 @@ public class FlightController : MonoBehaviour
             transform.Rotate(-Vector3.right * pitchSpeed * Time.deltaTime);
         }
         
+        // Yaw
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            transform.Rotate(-Vector3.up * yawSpeed * Time.deltaTime);
+        }
+
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            transform.Rotate(Vector3.up * yawSpeed * Time.deltaTime);
+        }
+
         // Roll
     }
 
